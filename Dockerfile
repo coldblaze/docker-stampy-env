@@ -3,8 +3,7 @@ FROM ubuntu:18.04
 LABEL maintainer="https://github.com/coldblaze"
 
 # Install sshd, Python3, PyGObject and packages for Korean
-RUN add-apt-repository ppa:gnome3-team/gnome3 -y \
- && apt-get update -qq -y \
+RUN apt-get update -qq -y \
  && apt-get install -qq -y \
     locales \
     language-pack-ko \
@@ -30,7 +29,9 @@ RUN add-apt-repository ppa:gnome3-team/gnome3 -y \
     python3-gi python3-gi-cairo gir1.2-gtk-3.0 \
     libwebkitgtk-3.0-dev \
     libgl1-mesa-glx \
-    epiphany-browser \
+ && add-apt-repository ppa:gnome3-team/gnome3 -y \
+ && apt-get update \
+ && apt-get install -qq -y  epiphany-browser \
  && echo "export XMODIFIERS=@im=nabi" >> /root/.bashrc \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
