@@ -2,14 +2,14 @@
 ##### CONFIGS #####
 HOST_VOLUME="/Users/coldblaze/docker_works"
 CONTAINER_MNT="/srv"
-NAME="evanote-dev"
-HOST_NAME="evanote-dev"
+NAME="stampy-env"
+HOST_NAME="stampy-env"
 NETWORK_CARD="en1"
 HOST_PORT="10022"
 CONTAINER_PORT="22"
 ##### END OF CONFIGS #####
 
-_IMAGE="coldblaze/evanote-dev"
+_IMAGE="coldblaze/stampy-env"
 _IMAGE_TAG="latest"
 
 case $1 in
