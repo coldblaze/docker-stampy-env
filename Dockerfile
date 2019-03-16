@@ -30,10 +30,8 @@ RUN apt-get update -qq -y \
     libwebkitgtk-3.0-dev \
     libgl1-mesa-glx \
     glade \
+    epiphany-browser \
     software-properties-common \
- && add-apt-repository ppa:gnome3-team/gnome3 -y \
- && apt-get update \
- && apt-get install -qq -y epiphany-browser \
  && echo "export XMODIFIERS=@im=nabi" >> /root/.bashrc \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
