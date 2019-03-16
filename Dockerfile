@@ -29,6 +29,7 @@ RUN apt-get update -qq -y \
     python3-gi python3-gi-cairo gir1.2-gtk-3.0 \
     libwebkitgtk-3.0-dev \
     libgl1-mesa-glx \
+    glade \
     software-properties-common \
  && add-apt-repository ppa:gnome3-team/gnome3 -y \
  && apt-get update \
