@@ -31,7 +31,6 @@ RUN apt-get update -qq -y \
     libgl1-mesa-glx \
     glade \
     epiphany-browser \
-    software-properties-common \
  && echo "export XMODIFIERS=@im=nabi" >> /root/.bashrc \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
