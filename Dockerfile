@@ -27,6 +27,7 @@ RUN apt-get update -qq -y \
     fonts-nanum fonts-nanum-extra nabi \
     python3 python3-pip \
     python3-gi python3-gi-cairo gir1.2-gtk-3.0 \
+    dbus-x11 \
     libwebkitgtk-3.0-dev \
     libgl1-mesa-glx \
     glade \
